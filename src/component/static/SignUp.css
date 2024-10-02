@@ -1,0 +1,119 @@
+/* Ensures the container takes up the full height of the screen */
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+/* The left panel that contains the image */
+.left-panel {
+  width: 45%;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The right panel that contains the form */
+.right-panel {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Adjusts the image in the left panel */
+.pizza-imageleft {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  transform: rotate(-90deg);
+}
+
+/* Aligns the title and image on the right panel */
+.image-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Styling the title */
+.pizza-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(255, 102, 0);
+  margin-left: 10px;
+}
+
+/* Adjusts the form layout */
+.form-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Full width for text fields */
+.text-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.continue-button {
+  margin-top: 30px;
+  background-color: orange;
+  color: white;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-panel, .right-panel {
+    width: 100%;
+    height: auto;
+  }
+
+  .pizza-imageleft {
+    width: 200px;
+    top: 5%;
+    left: 10%;
+  }
+
+  .pizza-title {
+    font-size: 28px;
+  }
+
+  .form-container {
+    width: 80%;
+  }
+}
+
+/* Media query for very small screens (e.g., mobile phones) */
+@media screen and (max-width: 480px) {
+  .pizza-imageleft {
+    width: 150px;
+    top: 0%;
+    left: 5%;
+  }
+
+  .pizza-title {
+    font-size: 24px;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+}

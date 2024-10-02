@@ -1,0 +1,96 @@
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+ 
+.left-panel {
+    /* width: 45%; */
+    flex: 0 0 40%;
+    background-color:  orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .right-panel {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pizza-imageleft {
+    width: 300px;
+    height: auto; 
+    margin-bottom: 20px; 
+    position: absolute; 
+    top: 10%; 
+    left: 15%; 
+    transform: rotate(-90deg); 
+  }
+  
+  
+  .image-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .pizza-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(255, 102, 0);
+  }
+  .pizza-image {
+    width: 30px;
+    height: auto; 
+    margin-bottom: 20px; 
+    position: absolute; 
+    top: 0%; 
+    left: 56%; 
+    transform: rotate(-90deg); 
+  }
+  
+  /* .form-container {
+    width: 60%;
+    /* text-align: center;  */
+    /* display: flex;
+    flex-direction: column;
+    gap: 10px; 
+  } */
+   */
+   .form-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+  }
+  .text-field {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  .login-button {
+    margin-top: 20px;
+    background-color: orange;
+    color: #ffffff;
+  }
+  
+  .remember-me-checkbox {
+    margin-bottom: 20px;
+  }
+  
+  .sign-up-text {
+    margin-top: 20px;
+    color: orange;
+  }
+  
+  .sign-up-link {
+    color:  rgb(255, 102, 0); 
+    font-weight: bold;
+    text-decoration: none;
+  }
+  

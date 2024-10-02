@@ -1,0 +1,115 @@
+/* General container for layout */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Left panel */
+.left-panel {
+  flex: 0 0 45%; /* Fixed width */
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Right panel */
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  position: relative;
+  z-index: 1;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form container */
+.form-container {
+  width: 100%;
+  max-width: 900px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form field adjustments */
+.text-field {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Upload button styles */
+.upload-button {
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+/* Checkbox style */
+.checkbox {
+  margin-bottom: 15px;
+}
+
+/* Sign-up button */
+.sign-up-button {
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-top: 15px;
+}
+
+/* Login link style */
+.login-button {
+  color: orange;
+  text-decoration: underline;
+}
+
+p {
+  margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .left-panel {
+    flex: 0 0 40%;
+  }
+
+  .right-panel {
+    flex: 1;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .left-panel,
+  .right-panel {
+    flex: 0 0 100%;
+    height: auto;
+  }
+
+  .form-container {
+    width: 90%;
+    padding: 15px;
+  }
+}
